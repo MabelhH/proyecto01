@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Habitaciones</title>
+    <link rel="stylesheet" href="habitacion.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-section">
+            <h1>Tenemos habitaciones confortables</h1>
+            <img src="/imagen/habi.jpg" alt="Habitación" class="room-image">
+        </div>
+        <div class="form-section">
+            <h2>Registro de Habitaciones</h2>
+            <form action="habitacion.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="tipo">Tipo de Habitación:</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="">Selecciona un tipo</option>
+                        <option value="especial">VIP</option>
+                        <option value="familiar">FAMILIAR</option>
+                        <option value="normal">NORMAL</option>
+                    </select>
+                </div>
+                <div class="form-group2">
+                    <label for="estado">Estado:</label>
+                    <div class="radio-group">
+                        <input type="radio" name="estado" id="libre" style="height: 25px; width: 30px;" value="libre" required>
+                        <label for="libre">Libre</label>
+                        <input type="radio" name="estado" id="ocupado" style="height: 25px; width: 30px;" value="ocupado" required>
+                        <label for="ocupado">Ocupado</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="costo">Costo:</label>
+                    <input type="number" id="costo" name="costo" min="0" required>
+                </div>
+                <div class="form-group3">
+                    <label for="imagen">Imagen de la habitación:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Guardar</button>
+                    <a href="/paginaprincipal/administrador.php" type="reset" class="reset-btn">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #f4f7f9;
+        background-image: url("/imagen/iam-blue-wallpaper.jpg");
+        background-color: rgba(0, 0, 0, 0);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 0.8;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #00bfff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #00bfff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #cac7c7;
+}
+
+table th {
+    background-color: cadetblue;
+    color: #f4f7f9;
+}
+
+table tr:nth-child(even) {
+    background-color: #555;
+}
+
+table td {
+    color: #f4f7f9;
+    background-color: #cac7c7;
+    
+}
+
+table td a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+table td a:nth-child(2) {
+    color: #dc3545;
+}
+
+table td a:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table td,
+table th {
+    font-size: 14px;
+}
+
+br {
+    margin-bottom: 15px;
+}
+
+a.volver {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.volver:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); 
+}
+
+a.volver:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva</title>
+    <link rel="stylesheet" href="/reserva/reserva.css">
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <div class="form-container">
+                <h1>Reserva tu Estancia</h1>
+                <form action="/reserva/reserva.php" method="POST">
+                    <label for="nombreCliente">Nombre del Cliente:</label>
+                    <input type="text" id="nombreCliente" name="NombreCliente" required>
+
+                    <label for="fechaEntrada">Fecha de Entrada:</label>
+                    <input type="date" id="fechaEntrada" name="FechaEntrada" required>
+
+                    <label for="fechaSalida">Fecha de Salida:</label>
+                    <input type="date" id="fechaSalida" name="FechaSalida" required>
+
+                    <label for="habitacion">Habitación:</label>
+                    <select id="habitacion" name="Habitacion" required>
+                        <option value="">Seleccione una habitación</option>
+                        <option value="101">Habitación 101</option>
+                        <option value="102">Habitación 102</option>
+                        <option value="201">Habitación 201</option>
+                        <option value="202">Habitación 202</option>
+                        <option value="301">Habitación 301 (Suite)</option>
+                    </select>
+
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="Estado">
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="Confirmada">Confirmada</option>
+                        <option value="Cancelada">Cancelada</option>
+                    </select>
+                    <br>
+                    <button type="submit">Reservar Ahora</button>
+                </form>
+                <a class="botovol" href="/paginaprincipal/usuario.php">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

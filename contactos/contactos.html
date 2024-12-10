@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/contactos/contactos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <img src="/imagen/chh.png" alt="" width="450px" height="450px">
+    <div class="container">
+        <form action="contactos.php" method="post">
+            <h2>Escribenos para mas informacion!</h2>
+            <br>
+            <div class="form-group">
+                <i class='bx bx-id-card'></i>
+                <input type="number" id="dni" name="dni" placeholder="DNI" required>
+            </div>
+            <div class="form-group">
+                <i class='bx bx-user'></i>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+            </div>
+            <div class="form-group">
+                <i class='bx bx-envelope'></i>
+                <input type="email" id="correo" name="correo"  placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <i class='bx bx-phone' ></i>
+                <input type="number" id="tipodeusuario" name="Telefono"  placeholder="Telefono" required>
+            </div>
+            <div class="form-group">
+                <i class='bx bx-map'></i>
+                <input type="text" id="direccion" name="direccion"  placeholder="Direccion" required>
+            </div>
+            <div class="form-group2">
+                <i class='bx bx-edit'></i>
+                <textarea name="mensage"  id="mensage" rows="5" placeholder="Mensage"></textarea>
+            </div>
+            <div class="form-actions">
+                <input type="submit" class="btn btn-success" value="Aceptar">
+                <a href="/paginaprincipal/index.html" class="btn btn-danger" value="Cancelar">Cancelar</a>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
